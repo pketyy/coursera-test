@@ -1,2 +1,63 @@
 * {
   box-sizing: border-box; }
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+}
+h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+}
+h2 {
+	font-size: 1.25em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 160px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	margin: 0;
+	padding: 3px 30px;
+	background-color: #efa5a5;
+}
+.rd {
+	background-color: #a64c4c;
+	color: #fff;
+}
+.yl {
+	background-color: #f3faae;
+}
+section {
+	position:relative;
+	width: 90%;
+	float: none;
+	margin: 0 auto 2%;
+	border: 1px solid #000000;
+	background-color: #c3c3c3
+}
+p {
+	margin-top: 45px;
+	padding: 0 15px;
+	line-height: 1.3em;
+}
+@media (min-width: 992px) {
+	section {
+	    width: 31.33%;
+		float: left;
+		margin: 0 1% 2%;
+	}	
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+    	width: 48%;
+    	float: left;
+    	margin: 0 1% 2%;
+    }
+    section:last-of-type {
+    	width: 98%;
+    }
+}

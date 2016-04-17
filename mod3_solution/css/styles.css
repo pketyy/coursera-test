@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+a {
+  color: #fff;
+  font-size: 25px;
+}
+a:hover,
+a:focus {
+  color: #d49692;
+  text-decoration: none
+}
+h1 {
+  font-family: 'Lora', sans-serif;
+}
+
+/* Header */
+
+.navbar-default {
+  background-color: #61122f;
+  border-radius: 0;
+  border:none;
+}
+.navbar-nav {
+  margin: 7.5px -15px 0
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+.nav>li {
+  border-top: 1px solid #fff;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+  background-color: #d49692
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #d49692
+}
+
+/* Home Page */
+.article {
+  background-color: #d49692;
+  padding: 1em;
+  margin-top: 2em;
+  color: #61122f;
+}
+.article h3 {
+  color: #fff
+}
+.article a:hover, 
+.article a:focus {
+  color: #61122f;
+}

@@ -23,7 +23,7 @@ var menuItemsUrl =
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
-// Convinience function for inserting innerHTML for 'select'
+// Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
@@ -63,7 +63,20 @@ var switchMenuToActive = function () {
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
   
-
+// TODO: STEP 0: Look over the code from 
+// *** start *** 
+// to 
+// *** finish *** 
+// below.
+// We changed this code to retrieve all categories from the server instead of
+// simply requesting home HTML snippet. We now also have another function
+// called buildAndShowHomeHTML that will receive all the categories from the server
+// and process them: choose random category, retrieve home HTML snippet, insert that
+// random category into the home HTML snippet, and then insert that snippet into our
+// main page (index.html).
+//
+// TODO: STEP 1: Substitute [...] below with the *value* of the function buildAndShowHomeHTML, 
+// so it can be called when server responds with the categories data.
 
 // *** start ***
 // On first load, show home view
@@ -100,7 +113,6 @@ function buildAndShowHomeHTML (categories) {
     false); 
 }
 
-
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
@@ -130,7 +142,7 @@ dc.loadMenuItems = function (categoryShort) {
 };
 
 
-// Builds HTML for the categiries page based on the data
+// Builds HTML for the categories page based on the data
 // from the server
 function buildAndShowCategoriesHTML (categories) {
   // Load title snippet of categories page
@@ -315,3 +327,5 @@ global.$dc = dc;
 
 })(window);
 
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Se
